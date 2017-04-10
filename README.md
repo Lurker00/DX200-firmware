@@ -9,7 +9,7 @@ To check the current version in Android mode, go to _Settings_, _About DX200_, _
 To flash the firmware, you need a computer running Windows XP or later, and [Rockchip FactoryTool v1.39](https://github.com/Lurker00/DX200-firmware/tree/master/tools). Flashing this firmware will not clean the user data.
 
 ## Use of USB Reader in Mango to access microSD card
-In firmware 2.1.94, write access to microSD card using USB Reader mode of Mango may lead to corrupted files and the file system!The reason is that Mango does not unmount the SD card internally, so that an access possible from both sides (DX200 and PC/Mac) at the same time, without knowing of each other.
+In firmware 2.1.94, write access to microSD card using USB Reader mode of Mango may lead to corrupted files and the file system! The reason is that Mango does not unmount the SD card internally, so that an access possible from both sides (DX200 and PC/Mac) at the same time, without knowing of each other.
 
 If you really want to use this feature, it is strongly recommended to perform the following steps in this particular order:
 1. Connect DX200 to PC/Mac as Card Reader right after device boot.
