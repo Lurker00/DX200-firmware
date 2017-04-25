@@ -8,6 +8,19 @@ To check the current version in Android mode, go to _Settings_, _About DX200_, _
 
 To flash the firmware, you need a computer running Windows XP or later, and [Rockchip FactoryTool v1.39](https://github.com/Lurker00/DX200-firmware/tree/master/tools). Flashing this firmware will not clean the user data.
 
+## Changes made
+### Mango mode
+* Removed Android services, that are not used in this mode.
+* Enabled USB Reader mode ([read below](https://github.com/Lurker00/DX200-firmware/blob/master/README.md#use-of-usb-reader-in-mango-to-access-microsd-card)).
+* Fonts are replaced with a font based on `Roboto Condensed` and `Arial Unicode MS`.
+* Removed video codecs from Mango multimedia engine.
+
+### Android mode
+* Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
+* Added Google Play Market. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
+* Added SuperSU for those who need root access.
+* Embedded [USB Audio for DX200](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+).
+
 ## Use of USB Reader in Mango to access microSD card
 Write access to microSD card using USB Reader mode of Mango may lead to corrupted files and the file system! The reason is that Mango does not unmount the SD card internally, so that an access possible from both sides (DX200 and PC/Mac) at the same time, without knowing of each other.
 
@@ -17,16 +30,3 @@ If you really want to use this feature, it is strongly recommended to perform th
 3. Copy your files to or from the SD card.
 3. Safely disconnect the device from PC/Mac.
 4. Turn DX200 off, then on, and only then make operations that may need write access to the SD card.
-
-## Changes made
-### Mango mode
-* Removed Android services, that are not used in this mode.
-* Enabled USB Reader mode (see above).
-* Fonts are replaced with a font based on `Roboto Condensed` and `Arial Unicode MS`.
-* Removed video codecs from Mango multimedia engine.
-
-### Android mode
-* Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
-* Added Google Play Market. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
-* Added SuperSU for those who need root access.
-* Embedded [USB Audio for DX200](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+).
