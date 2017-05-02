@@ -19,7 +19,7 @@ To flash the firmware, you need a computer running Windows XP or later, and [Roc
 * Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
 * Added Google Play Market. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
 * Added SuperSU for those who need root access.
-* Embedded [USB Audio for DX200](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+). You may find its *USB Mass Storage* functionality useful even if you don't want to use USB Audio interface.
+* Embedded [USB Audio for DX200](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+). You may find its *USB Mass Storage* or *CPU Turbo Mode* functions useful even if you don't want to use USB Audio interface.
 
 ## Use of USB Reader in Mango to access microSD card
 Write access to microSD card using USB Reader mode of Mango may lead to corrupted files and the file system! The reason is that Mango does not unmount the SD card internally, so that an access possible from both sides (DX200 and PC/Mac) at the same time, without knowing of each other.
