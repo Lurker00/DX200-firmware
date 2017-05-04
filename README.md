@@ -10,7 +10,7 @@ To flash the firmware, you need a computer running Windows XP or later, and [Roc
 
 ## Changes made
 ### Android mode
-* **USB Mass Storage** (2.2.110-L1+) to direct access of your microSD card when you connect DX200 to a computer. It replaces MIDI choice in the drop-down menu of USB connections.
+* **USB Mass Storage** (2.2.110-L1+) to direct access of your microSD card when you connect DX200 to a computer. It replaces MIDI choice in the pull-down menu of USB connections. When selected, SD card is unmounted internally, and is not visible if you return back to MTP. It is mounted back right after disconnect from the computer.
 * Embedded [**USB Audio for DX200**](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+). You may find its *CPU Turbo Mode* function useful even if you don't want to use USB Audio interface.
 * Added **Google Play Market**. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
 * Added **SuperSU** for those who need root access.
