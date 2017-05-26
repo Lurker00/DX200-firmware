@@ -6,14 +6,20 @@ To download the latest releases, please go to the [Releases section](https://git
 
 To check the current version in Android mode, go to _Settings_, _About DX200_, _Build number_ at the bottom. In Mango mode, open _Settings_, _Advanced_, _System Info_, and look to _Firmware version_ and suffix (e.g. L0) in _Model number_.
 
-To flash the firmware, you need a computer running Windows XP or later, and [Rockchip FactoryTool v1.39](https://github.com/Lurker00/DX200-firmware/tree/master/tools). Flashing this firmware will not clean the user data.
+To flash the firmware, you need
+* a computer running Windows XP or later, and [Rockchip FactoryTool v1.39](https://github.com/Lurker00/DX200-firmware/tree/master/tools), or
+* Mac/Linux with rkflashtool. See below for details.
+
+Flashing this firmware will not clean the user data.
 
 ## Changes made
 ### Android mode
 * **USB Mass Storage** (2.2.110-L1+) to direct access of your microSD card when you connect DX200 to a computer. It replaces MIDI choice in the pull-down menu of USB connections. When selected, SD card is unmounted internally, and is not visible if you return back to MTP. It is mounted back right after disconnect from the computer.
 * Embedded [**USB Audio for DX200**](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+). You may find its *CPU Turbo Mode* function useful even if you don't want to use USB Audio interface.
+* Embedded a special build of [**HibyMusic**](https://play.google.com/store/apps/details?id=com.hiby.music), compatible with USB Audio. All the required changes made by me, with kind permission of [HiBy Music](http://www.hiby.cd/index_en.aspx). This build may co-exist with official releases installed from Google PlayMarket.
 * Added **Google Play Market**. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
 * Added **SuperSU** for those who need root access.
+* Added support to mount exFAT and NTFS file systems by UUID, not as `default` (2.2.110-L2+). This allows to use microSD and a USB OTG disk at the same time, without problems.
 * Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
 
 ### Mango mode
@@ -31,3 +37,21 @@ If you really want to use this feature, it is strongly recommended to perform th
 3. Copy your files to or from the SD card.
 3. Safely disconnect the device from PC/Mac.
 4. Turn DX200 off, then on, and only then make operations that may need write access to the SD card.
+
+## Flash DX200 firmware using rkflashtool
+First of all, you need to download a zip archive with "-rkflashtool" suffix, which contains two files: `boot.img` and `system.img`. You need to install [rkflashtool version 6.1 or later](https://sourceforge.net/projects/rkflashtool/files/). For Lunux, you have to build it from the source code. For MacOS, you can build it yourself as well, but there are pre-built binaries, also in [Homebrew](http://brewformulas.org/Rkflashtool).
+
+1. Turn DX200 off.
+2. Press and hold Pause/Play button.
+3. Connect DX200 to your computer via USB.
+4. In a couple of seconds, release Play/Pause.
+
+Now DX200 should be in factory flash mode. Then type the following commands (possibly with or in su):<br />
+`rkflashtool v`<br />
+`rkflashtool n`<br />
+to check if `rkflashtool` sees and recognises your DX200. Then type in the directory where you have unzipped firmware files:<br />
+`rkflashtool w boot < boot.img`<br />
+`rkflashtool w system < system.img`<br />
+At the end of the each process you'll see a message `premature end-of-file reached`: it is normal, because files are smaller than flash partition sizes. Now you can issue<br />
+`rkflashtool b`<br />
+to reboot the device, or do it manually.
