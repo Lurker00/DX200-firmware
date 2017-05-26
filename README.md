@@ -38,7 +38,7 @@ If you really want to use this feature, it is strongly recommended to perform th
 3. Safely disconnect the device from PC/Mac.
 4. Turn DX200 off, then on, and only then make operations that may need write access to the SD card.
 
-## Flash DX200 firmware using rkflashtool
+## Flash DX200 firmware using rkflashtool (Mac/Linux)
 First of all, you need to download a zip archive with "-rkflashtool" suffix, which contains two files: `boot.img` and `system.img`. You need to install [rkflashtool version 6.1 or later](https://sourceforge.net/projects/rkflashtool/files/). For Lunux, you have to build it from the source code. For MacOS, you can build it yourself as well, but there are pre-built binaries, also in [Homebrew](http://brewformulas.org/Rkflashtool).
 
 1. Turn DX200 off.
