@@ -47,11 +47,17 @@ First of all, you need to download a zip archive with "-rkflashtool" suffix, whi
 4. In a couple of seconds, release Play/Pause.
 
 Now DX200 should be in factory flash mode. Then type the following commands (possibly with or in su):
+
     rkflashtool v
     rkflashtool n
+
 to check if `rkflashtool` sees and recognises your DX200. Then type in the directory where you have unzipped firmware files:
+
     rkflashtool w boot < boot.img
     rkflashtool w system < system.img
+
 At the end of the each process you'll see a message `premature end-of-file reached`: it is normal, because files are smaller than flash partition sizes. Now you can issue
+
     rkflashtool b
+
 to reboot the device, or do it manually.
