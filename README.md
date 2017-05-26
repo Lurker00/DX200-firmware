@@ -8,7 +8,7 @@ To check the current version in Android mode, go to _Settings_, _About DX200_, _
 
 To flash the firmware, you need
 * a computer running Windows XP or later, and [Rockchip FactoryTool v1.39](https://github.com/Lurker00/DX200-firmware/tree/master/tools), or
-* Mac/Linux with rkflashtool. See below for details.
+* Mac/Linux with rkflashtool. See [below for details](#flash-dx200-firmware-using-rkflashtool).
 
 Flashing this firmware will not clean the user data.
 
@@ -46,12 +46,12 @@ First of all, you need to download a zip archive with "-rkflashtool" suffix, whi
 3. Connect DX200 to your computer via USB.
 4. In a couple of seconds, release Play/Pause.
 
-Now DX200 should be in factory flash mode. Then type the following commands (possibly with or in su):<br />
-`rkflashtool v`<br />
-`rkflashtool n`<br />
-to check if `rkflashtool` sees and recognises your DX200. Then type in the directory where you have unzipped firmware files:<br />
-`rkflashtool w boot < boot.img`<br />
-`rkflashtool w system < system.img`<br />
-At the end of the each process you'll see a message `premature end-of-file reached`: it is normal, because files are smaller than flash partition sizes. Now you can issue<br />
-`rkflashtool b`<br />
+Now DX200 should be in factory flash mode. Then type the following commands (possibly with or in su):
+    rkflashtool v
+    rkflashtool n
+to check if `rkflashtool` sees and recognises your DX200. Then type in the directory where you have unzipped firmware files:
+    rkflashtool w boot < boot.img
+    rkflashtool w system < system.img
+At the end of the each process you'll see a message `premature end-of-file reached`: it is normal, because files are smaller than flash partition sizes. Now you can issue
+    rkflashtool b
 to reboot the device, or do it manually.
