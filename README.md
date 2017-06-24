@@ -10,7 +10,7 @@ To flash the firmware, you need
 * a computer running Windows XP or later, and [Rockchip FactoryTool v1.39](https://github.com/Lurker00/DX200-firmware/tree/master/tools), or
 * Mac/Linux with rkflashtool version 6.1 or later. See [below for details](#flash-dx200-firmware-using-rkflashtool).
 
-Flashing this firmware will not clean the user data.
+Flashing this firmware will not clean the user data. To return to the official firmware, just flash it per its instruction. You may only need to do a factory reset to get rid of icons of software, pre-installed in my firmware builds, but sometimes it's enough to delete them a usual way.
 
 ## Changes made
 ### Android mode
