@@ -19,8 +19,11 @@ Flashing this firmware will not clean the user data. To return to the official f
 * Embedded a special build of [**HibyMusic**](https://play.google.com/store/apps/details?id=com.hiby.music), compatible with USB Audio. All the required changes made by me, with kind permission of [HiBy Music](http://www.hiby.cd/index_en.aspx). This build may co-exist with official releases installed from Google PlayMarket.
 * Added **Google Play Market**. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
 * Added **SuperSU** for those who need root access.
-* Added support to mount exFAT and NTFS file systems by UUID, not as `default` (2.2.110-L2+). This allows to use microSD and a USB OTG disk at the same time, without problems.
+* Added support to mount exFAT and NTFS file systems by UUID, not as `default` (2.2.110-L2+). This allows to use microSD and a USB OTG disk at the same time, without problems. 2.2.125-L1 has restored support for badly formatted VFAT SD cards.
 * Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
+* Battery level percentage indicator is back, and volume level indicator is visible at the lock screen (2.3.125-L1+).
+* A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` crashes (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playback.
+* A fix for Android reboots which were introduced in official 2.3.125 release (2.3.125-L1+).
 
 ### Mango mode
 * Removed Android services, that are not used in this mode.
