@@ -20,14 +20,16 @@ Flashing this firmware will not clean the user data. To return to the official f
 * Added **Google Play Market**. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
 * Added **SuperSU** for those who need root access.
 * Added support to mount exFAT and NTFS file systems by UUID, not as `default` (2.2.110-L2+). This allows to use microSD and a USB OTG disk at the same time, without problems. 2.2.125-L1 has restored support for badly formatted VFAT SD cards.
-* Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
+* Removed `rild` service (2.2.110L0+) and disabled any telephony and SMS services (2.3.125L2+).
 * Battery level percentage indicator is back, and volume level indicator is visible at the lock screen (2.3.125-L1+).
 * A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` crashes (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playback.
-* Custom builds of Android Power HAL (smart control over CPU cores for to ensure the performance when required, and to reduce power consumption when idle) and Lights HAL (fast backlight control, no attempts to control absent LEDs)(2.3.125-L2+).
+* Custom builds of Android Power, Lights and Vibrator [HAL](https://source.android.com/reference/hal/)s (2.3.125-L2+).
 
 Custom build of Android Power HAL module has implemented the following strategies for 8 CPU cores:
 * Screen on: 8 in normal, 4 in Battery Saving modes.
 * Screen off: 4 when music is playing (by any application!), 1 when idle.
+Custom build of Android Lights HAL module has implemented fast control of backlight, and removed control of LEDs, which are missing anyway.< /br>
+Custom build of Android Vibrator HAL module just does nothing, because there is no corresponding hardware in DX200.
 
 ### Mango mode
 * Removed Android services, that are not used in this mode.
