@@ -23,7 +23,11 @@ Flashing this firmware will not clean the user data. To return to the official f
 * Removed `rild` service. It provides an interface to the telephony part which is absent (2.2.110+).
 * Battery level percentage indicator is back, and volume level indicator is visible at the lock screen (2.3.125-L1+).
 * A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` crashes (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playback.
-* A fix for Android reboots which were introduced in official 2.3.125 release (2.3.125-L1+).
+* Custom builds of Android Power HAL (smart control over CPU cores for to ensure the performance when required, and to reduce power consumption when idle) and Lights HAL (fast backlight control, no attempts to control absent LEDs)(2.3.125-L2+).
+
+Custom build of Android Power HAL module has implemented the following strategies for 8 CPU cores:
+* Screen on: 8 in normal, 4 in Battery Saving modes.
+* Screen off: 4 when music is playing (by any application!), 1 when idle.
 
 ### Mango mode
 * Removed Android services, that are not used in this mode.
