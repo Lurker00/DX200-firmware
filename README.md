@@ -27,7 +27,7 @@ Flashing this firmware will not clean the user data. To return to the official f
 
 Custom build of Android Power HAL module has implemented the following strategies for 8 CPU cores:
 * Screen on: 8 in normal, 4 in Battery Saving modes.
-* Screen off: 4 when music is playing (by any application!), 1 when idle.
+* Screen off: 4 when music is playing (by any application!), 1 when idle (including USB DAC mode).
 
 Custom build of Android Lights HAL module has implemented fast control of backlight, and removed control of LEDs, which are missing anyway.<br />
 Custom build of Android Vibrator HAL module just does nothing, because there is no corresponding hardware in DX200.
