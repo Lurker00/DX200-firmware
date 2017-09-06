@@ -15,4 +15,4 @@ For a test, download a track, unzip. Connect your device' S/PDIF output to S/PDI
 * [**dts_test44.zip**](https://github.com/Lurker00/DX200-firmware/raw/master/tools/dts_test44.zip) - DTS track in 16/44.1KHz format.
 * [**dts_test48.zip**](https://github.com/Lurker00/DX200-firmware/raw/master/tools/dts_test48.zip) - DTS track in 16/48KHz format.
 
-With iBasso DX200 in full Android mode, MangoPlayer passes both tests. Other players (tried USB AUdio Player PRO, HibyMusic, Neutron Music Player) pass only 16/44.1 test, which means that Android sound path is locked to 44.1kYz sampling rate. With [USB Audio](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) software, all three players pass both tests.
+With iBasso DX200 in full Android mode, MangoPlayer passes both tests. Other players (tried USB AUdio Player PRO, HibyMusic, Neutron Music Player) pass only 16/44.1 test, which means that Android sound path is locked to 44.1kHz sampling rate. With [USB Audio](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) software, all three players pass both tests.
