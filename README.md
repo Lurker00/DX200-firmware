@@ -22,7 +22,7 @@ Flashing this firmware will not clean the user data. To return to the official f
 * Added support to mount exFAT and NTFS file systems by UUID, not as `default` (2.2.110-L2+). This allows to use microSD and a USB OTG disk at the same time, without problems. 2.2.125-L1 has restored support for badly formatted VFAT SD cards.
 * Removed `rild` service (2.2.110L0+) and disabled any telephony and SMS services (2.3.125L2+).
 * Battery level percentage indicator is back, and volume level indicator is visible at the lock screen (2.3.125-L1+).
-* A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` crashes (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playback.
+* A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` crashes (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playback.<br /> Starting from 2.5.141L1, it allows application like [Neutron Music](https://play.google.com/store/apps/details?id=com.neutroncode.mp) to play DSD in DoP and PCM up to 32/384kHz transparently, without additional efforts.
 * Custom builds of Android Power, Lights and Vibrator [HAL](https://source.android.com/reference/hal/)s (2.3.125-L2+).
 
 Custom build of Android Power HAL module has implemented the following strategies for 8 CPU cores:
