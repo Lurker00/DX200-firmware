@@ -15,21 +15,22 @@ Flashing this firmware will not clean the user data. To return to the official f
 ## Changes made
 ### Android mode
 * **USB Mass Storage** (2.2.110-L1+) to direct access of your microSD card when you connect DX200 to a computer. It replaces MIDI choice in the pull-down menu of USB connections. When selected, SD card is unmounted internally, and is not visible if you return back to MTP. It is mounted back right after disconnect from the computer.
-* Embedded [**USB Audio for DX200**](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+). You may find its *CPU Turbo Mode* function useful even if you don't want to use USB Audio interface.
+* Embedded [**USB Audio for DX200**](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) application with advanced features, possible only for a built-in app (2.2.110+).
 * Embedded a special build of [**HibyMusic**](https://play.google.com/store/apps/details?id=com.hiby.music), compatible with USB Audio. All the required changes made by me, with kind permission of [HiBy Music](http://www.hiby.cd/index_en.aspx). This build may co-exist with official releases installed from Google PlayMarket.
 * Added **Google Play Market**. It is not the latest version available, but it corresponds to the pre-installed Google Play Services.
 * Added **SuperSU** for those who need root access.
 * Added support to mount exFAT and NTFS file systems by UUID, not as `default` (2.2.110-L2+). This allows to use microSD and a USB OTG disk at the same time, without problems. 2.2.125-L1 has restored support for badly formatted VFAT SD cards.
 * Removed `rild` service (2.2.110L0+) and disabled any telephony and SMS services (2.3.125L2+).
 * Battery level percentage indicator is back, and volume level indicator is visible at the lock screen (2.3.125-L1+).
-* A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` crashes (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playback.<br /> Starting from 2.5.141L1, it allows application like [Neutron Music](https://play.google.com/store/apps/details?id=com.neutroncode.mp) to play DSD in DoP and PCM up to 32/384kHz transparently, without additional efforts.
+* A custom build of `libtinyalsa.so` to workaround a bug in Android, that caused `mediaserver` to crash (2.3.125-L1+). This problem was not visible for most users, because crashes and restarts happened on the background, between audio playbacks.<br /> Starting from 2.5.141L1, it allows [Neutron Music](https://play.google.com/store/apps/details?id=com.neutroncode.mp) to play DSD in DoP, and PCM up to 32/384kHz, transparently, without additional efforts.
 * Custom builds of Android Power, Lights and Vibrator [HAL](https://source.android.com/reference/hal/)s (2.3.125-L2+).
+* Workaround for confusing and annoying "Choose app for the USB device" (or similar) Android prompt when Mango plays DSD, or USB Audio turns the interface on (2.5.141L1+).
 
 Custom build of Android Power HAL module has implemented the following strategies for 8 CPU cores:
 * Screen on: 8 in normal, 4 in Battery Saving modes.
 * Screen off: 4 when music is playing (by any application!), 1 when idle (including USB DAC mode).
 
-Custom build of Android Lights HAL module has implemented fast control of backlight, and removed control of LEDs, which are missing anyway.<br />
+Custom build of Android Lights HAL module has implemented fast control of backlight, and removed control of LEDs, which are missing in DX200 anyway.<br />
 Custom build of Android Vibrator HAL module just does nothing, because there is no corresponding hardware in DX200.
 
 ### Mango mode
