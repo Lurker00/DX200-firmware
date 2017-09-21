@@ -32,4 +32,4 @@ In normal mode, XMOS chip in DX200 does not decode DoP. With [firmware 2.5.141L1
 
 With [firmware 2.5.141L1](https://github.com/Lurker00/DX200-firmware/releases/latest), both Mango Player under Android and Neutron Music with Generic Driver *and* disabled EQ, filters and other enhacements, produce music.
 
-With USB Audio, all the apps that support it (USB Audio Player PRO, HibyMusic, Neutron Music Player) also produce music. It means, they all are capable of bit perfect playback.
+With [USB Audio](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md), all the apps that support it (USB Audio Player PRO, HibyMusic, Neutron Music Player) also produce music. It means, they all are capable of bit perfect playback.
