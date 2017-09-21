@@ -30,6 +30,6 @@ If a software player modifies PCM stream in either way, the output stream looses
 
 In normal mode, XMOS chip in DX200 does not decode DoP. With [firmware 2.5.141L1](https://github.com/Lurker00/DX200-firmware/releases/latest), my build of libtinyalsa.so switches XMOS chip to the mode in which it detects and decoded DoP automatically. It switches XMOS chip into this mode for recordings with sample rate above 192kHz, *and* for 176.4kHz, because for DSD64, DoP is essentially PCM 24/176.4.
 
-With [firmware 2.5.141L1](https://github.com/Lurker00/DX200-firmware/releases/latest), both Mango Player under Android and Neutron Music with Generic Driver *and* disabled EQ, filters and other enchacements, produce music.
+With [firmware 2.5.141L1](https://github.com/Lurker00/DX200-firmware/releases/latest), both Mango Player under Android and Neutron Music with Generic Driver *and* disabled EQ, filters and other enhacements, produce music.
 
 With USB Audio, all the apps that support it (USB Audio Player PRO, HibyMusic, Neutron Music Player) also produce music. It means, they all are capable of bit perfect playback.
