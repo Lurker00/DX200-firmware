@@ -22,7 +22,7 @@ With iBasso DX200 in full Android mode, MangoPlayer passes both tests. Other pla
 
 ## DSD64 in DoP
 
-DSD encoded in DoP looks like PCM for any music player. Being played using a DAC which can't decode DSD, it produces very quiet sound, almost silence. But, with DSD DoP capable DAC, you can hear the music. Here is a file with 1 minute sample:
+DSD stream encoded in DoP looks like a usual PCM for any music player. Being played using a DAC which can't decode DSD, it produces very quiet sound, almost silence. But, with DSD DoP capable DAC, you can hear the music. Here is a file with 1 minute sample:
 
 * [**DSD64-in-DoP.flac**](https://github.com/Lurker00/DX200-firmware/raw/master/tools/DSD64-in-DoP.flac) - DSD64 in DoP (PCM 24/176.4kHz).
 
