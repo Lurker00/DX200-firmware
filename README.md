@@ -52,19 +52,22 @@ If you really want to use this feature, it is strongly recommended to perform th
 4. Turn DX200 off, then on, and only then make operations that may need write access to the SD card.
 
 ## Flash DX200 firmware using rkflashtool (Mac/Linux)
-First of all, you need to download a zip archive with "-rkflashtool" suffix, which contains two files: `boot.img` and `system.img`. You need to install [rkflashtool version 6.1 or later](https://sourceforge.net/projects/rkflashtool/files/). For Lunux, you have to build it from the source code. For MacOS, you can build it yourself as well, but there are pre-built binaries, also in [Homebrew](http://brewformulas.org/Rkflashtool).
+You need to have installed [rkflashtool version 6.1 or later](https://sourceforge.net/projects/rkflashtool/files/). For Lunux, you have to build it from the source code. For MacOS, you can build it yourself as well, but there are pre-built binaries, also in [Homebrew](http://brewformulas.org/Rkflashtool).
+
+Then, you need to download a zip archive with "-rkflashtool" suffix, which contains two files: `boot.img` and `system.img`, and unzip it. If you have downloaded and unzipped it into your `Download` folder, the path is `/Users/username/Downloads` with your actual user name.
 
 ### Install Homebrew and rkflashtool
-These steps you need to perform only once, to set up the required environment:
-* Open `Terminal` from your Mac Utility folder. Copy and paste the following line into the command prompt and hit Enter:
+These steps you need to perform only once, to set up the required environment. Open **Terminal** from your Mac Utility folder. Copy and paste the following line into the command prompt and hit Enter:
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
-* Copy and paste the following command and hit Enter:
+
+Copy and paste the following command and hit Enter:
 
     brew install rkflashtool
 
 The steps above are taken from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
 
+### Prepare DX200 for firmware loading
 1. Turn DX200 off.
 2. Press and hold Pause/Play button.
 3. Connect DX200 to your computer via USB.
@@ -75,7 +78,14 @@ Now DX200 should be in factory flash mode. Then type the following commands (pos
     rkflashtool v
     rkflashtool n
 
-to check if `rkflashtool` sees and recognises your DX200. Then type in the directory where you have unzipped firmware files:
+to check if `rkflashtool` sees and recognizes your DX200.
+
+### Flash the firmware
+Change the current working directory in **Terminal** to one where you have unzipped firmware files, e.g.
+
+    cd /Users/username/Downloads
+
+with your actual user name and the path. Then type in the directory where you have unzipped firmware files:
 
     rkflashtool w boot < boot.img
     rkflashtool w system < system.img
