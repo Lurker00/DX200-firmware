@@ -57,10 +57,14 @@ First of all, you need to download a zip archive with "-rkflashtool" suffix, whi
 ### Install Homebrew and rkflashtool
 These steps you need to perform only once, to set up the required environment:
 * Open `Terminal` from your Mac Utility folder. Copy and paste the following line into the command prompt and hit Enter:
+
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
 * Copy and paste the following command and hit Enter:
+
     brew install rkflashtool
+
 The steps above are taken from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
+
 1. Turn DX200 off.
 2. Press and hold Pause/Play button.
 3. Connect DX200 to your computer via USB.
