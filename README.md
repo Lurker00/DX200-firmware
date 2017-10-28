@@ -61,17 +61,15 @@ These steps you need to perform only once, to set up the required environment. O
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
 
-Copy and paste the following command and hit Enter:
+When you have Homebrew installed, copy and paste the following command and hit Enter:
 
     brew install rkflashtool
-
-The steps above are taken from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
 
 ### Prepare DX200 for firmware loading
 1. Turn DX200 off.
 2. Press and hold Pause/Play button.
 3. Connect DX200 to your computer via USB.
-4. In a couple of seconds, release Play/Pause.
+4. In a five to ten seconds, release Play/Pause.
 
 Now DX200 should be in factory flash mode. Then type the following commands (possibly with or in su):
 
@@ -95,3 +93,5 @@ At the end of the each process you'll see a message `premature end-of-file reach
     rkflashtool b
 
 to reboot the device, or do it manually.
+
+The Mac specific steps above were derived from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
