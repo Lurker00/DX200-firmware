@@ -54,6 +54,13 @@ If you really want to use this feature, it is strongly recommended to perform th
 ## Flash DX200 firmware using rkflashtool (Mac/Linux)
 First of all, you need to download a zip archive with "-rkflashtool" suffix, which contains two files: `boot.img` and `system.img`. You need to install [rkflashtool version 6.1 or later](https://sourceforge.net/projects/rkflashtool/files/). For Lunux, you have to build it from the source code. For MacOS, you can build it yourself as well, but there are pre-built binaries, also in [Homebrew](http://brewformulas.org/Rkflashtool).
 
+### Install Homebrew and rkflashtool
+These steps you need to perform only once, to set up the required environment:
+* Open `Terminal` from your Mac Utility folder. Copy and paste the following line into the command prompt and hit Enter:
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+* Copy and paste the following command and hit Enter:
+    brew install rkflashtool
+The steps above are taken from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
 1. Turn DX200 off.
 2. Press and hold Pause/Play button.
 3. Connect DX200 to your computer via USB.
