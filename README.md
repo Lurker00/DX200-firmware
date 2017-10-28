@@ -39,6 +39,7 @@ Custom build of Android Vibrator HAL module just does nothing, because there is 
 * Enabled USB Reader mode ([read below](https://github.com/Lurker00/DX200-firmware/blob/master/README.md#use-of-usb-reader-in-mango-to-access-microsd-card)).
 * Fonts are replaced with a font based on `Roboto Condensed` and `Arial Unicode MS`.
 * Removed video codecs from Mango multimedia engine.
+* Turned off system logs, to decrease unwanted CPU load and background activity.
 
 ## Use of USB Reader in Mango to access microSD card
 Write access to microSD card using USB Reader mode of Mango may lead to corrupted files and the file system! The reason is that Mango does not unmount the SD card internally, so that an access possible from both sides (DX200 and PC/Mac) at the same time, without knowing of each other.
