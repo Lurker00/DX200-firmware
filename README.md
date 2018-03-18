@@ -14,7 +14,7 @@ Flashing this firmware will not clean the user data. To return to the official f
 
 1. [Changes made](#changes-made)
 1. [Use of USB Reader in Mango to access microSD card](#use-of-usb-reader-in-mango-to-access-microsd-card)
-1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#Flash-dx200-firmware-using-rkflashtool-maclinux)
+1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#flash-dx200-firmware-using-rkflashtool-maclinux)
 
 ## Changes made
 ### Android mode
