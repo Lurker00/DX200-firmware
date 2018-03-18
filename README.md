@@ -12,9 +12,9 @@ To flash the firmware, you need
 
 Flashing this firmware will not clean the user data. To return to the official firmware, just flash it per its instruction. You may only need to do a factory reset to get rid of icons of software, pre-installed in my firmware builds, but sometimes it's enough to delete them a usual way.
 
-1. [Changes made](#Changes-made)
-1. [Use of USB Reader in Mango to access microSD card](#Use-of-USB-Reader-in-Mango-to-access-microSD-card)
-1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#Flash-DX200-firmware-using-rkflashtool-MacLinux)
+1. [Changes made](#changes-made)
+1. [Use of USB Reader in Mango to access microSD card](#use-of-usb-reader-in-mango-to-access-microsd-card)
+1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#Flash-dx200-firmware-using-rkflashtool-maclinux)
 
 ## Changes made
 ### Android mode
