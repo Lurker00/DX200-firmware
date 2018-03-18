@@ -2,6 +2,11 @@
 
 **DISCLAIMER:** No changes were made to the basic player functionality and behavior! Expect the same bugs and misbehavior found in the base stock firmware! **No warranty at all: use the modified firmware at your own risk and responsibility!**
 
+1. [Changes made](#changes-made)
+1. [Use of USB Reader in Mango to access microSD card](#use-of-usb-reader-in-mango-to-access-microsd-card)
+1. [Flash DX200 firmware using FactoryTool (Windows)[#flash-dx200-firmware-using-factorytool-windows]
+1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#flash-dx200-firmware-using-rkflashtool-maclinux)
+
 To download the latest releases, please go to the [Releases section](https://github.com/Lurker00/DX200-firmware/releases).
 
 To check the current version in Android mode, go to _Settings_, _About DX200_, _Build number_ at the bottom. In Mango mode, open _Settings_, _Advanced_, _System Info_, and look to _Firmware version_ and suffix (e.g. L0) in _Model number_.
@@ -11,10 +16,6 @@ To flash the firmware, you need
 * Mac/Linux with rkflashtool version 6.1 or later. See [below for details](#flash-dx200-firmware-using-rkflashtool-maclinux).
 
 Flashing this firmware will not clean the user data. To return to the official firmware, just flash it per its instruction. You may only need to do a factory reset to get rid of icons of software, pre-installed in my firmware builds, but sometimes it's enough to delete them a usual way.
-
-1. [Changes made](#changes-made)
-1. [Use of USB Reader in Mango to access microSD card](#use-of-usb-reader-in-mango-to-access-microsd-card)
-1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#flash-dx200-firmware-using-rkflashtool-maclinux)
 
 ## Changes made
 ### Android mode
@@ -57,6 +58,14 @@ If you really want to use this feature, it is strongly recommended to perform th
 3. Copy your files to or from the SD card.
 3. Safely disconnect the device from PC/Mac.
 4. Turn DX200 off, then on, and only then make operations that may need write access to the SD card.
+
+## Flash DX200 firmware using FactoryTool (Windows)
+FactoryTool is the official RockChip Windows application to flash firmware into RockChip-based devices.
+
+You need to download and unzip the firmware image file: the only file in the archive with `.img` extension. Then:
+1. Download [zip-archive](https://github.com/Lurker00/DX200-firmware/raw/master/tools/Rockchip_FactoryTool_v1.39.zip).
+2. Unzip it.
+3. Read and follow the instruction ("DX200 batch tool instruction.doc") inside the archive.
 
 ## Flash DX200 firmware using rkflashtool (Mac/Linux)
 You need to have installed [rkflashtool version 6.1 or later](https://sourceforge.net/projects/rkflashtool/files/). For Lunux, you have to build it from the source code. For MacOS, you can build it yourself as well, but there are pre-built binaries, also in [Homebrew](http://brewformulas.org/Rkflashtool).
