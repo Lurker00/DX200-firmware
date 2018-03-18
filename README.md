@@ -12,6 +12,10 @@ To flash the firmware, you need
 
 Flashing this firmware will not clean the user data. To return to the official firmware, just flash it per its instruction. You may only need to do a factory reset to get rid of icons of software, pre-installed in my firmware builds, but sometimes it's enough to delete them a usual way.
 
+1. [Changes made](#Changes-made)
+1. [Use of USB Reader in Mango to access microSD card](#Use-of-USB-Reader-in-Mango-to-access-microSD-card)
+1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#Flash-DX200-firmware-using-rkflashtool-MacLinux)
+
 ## Changes made
 ### Android mode
 * Modified **Android's `DeviceIdleController`** (2.7.188L0+): with the official firmware, Android never goes into [Doze mode!](https://developer.android.com/training/monitoring-device-state/doze-standby.html#understand_doze). This is because the original [`DeviceIdleController` has turned off normal execution of device idling](https://android.googlesource.com/platform/frameworks/base/+/marshmallow-release/services/core/java/com/android/server/DeviceIdleController.java#1413) for devices without significant motion sensor. The modified version has removed any motion detectors, and the default `DeviceIdleController` constants are tuned for DAP use. See also [***System settings***](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md#system-settings) of USB Audio app to improve energy saving even more.<br />
