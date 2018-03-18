@@ -4,7 +4,7 @@
 
 1. [Changes made](#changes-made)
 1. [Use of USB Reader in Mango to access microSD card](#use-of-usb-reader-in-mango-to-access-microsd-card)
-1. [Flash DX200 firmware using FactoryTool (Windows)[#flash-dx200-firmware-using-factorytool-windows]
+1. [Flash DX200 firmware using FactoryTool (Windows)](#flash-dx200-firmware-using-factorytool-windows)
 1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#flash-dx200-firmware-using-rkflashtool-maclinux)
 
 To download the latest releases, please go to the [Releases section](https://github.com/Lurker00/DX200-firmware/releases).
