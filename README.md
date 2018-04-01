@@ -121,7 +121,7 @@ Neutron Music Player automatically detects DX200 and is able to play PCM up to 3
 **64-bit Processing:** **on**<br />
 **Automatic Gain Protection:** off<br />
 **Service:** off<br />
-**Audio Hardware:**<br />
+**Audio Hardware:**
 * DSP Effect (Device): off
 * Mono: off
 * Dither: off
