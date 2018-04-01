@@ -115,13 +115,13 @@ to reboot the device, or do it manually.
 The Mac specific steps above were derived from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
 
 ## Recommended settings for Neutron Music Player
-Neutron Music Player automatically detects DX200 and is able to play PCM up to 32/768KHz and DSD up to DSD512 bit perfect, without a need to use [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended the version 2.01.0-AMD64:
+Neutron Music Player automatically detects DX200 and is able to play PCM up to 32/768KHz and DSD up to DSD512 bit perfect, without a need to use [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended for the version 2.01.0-AMD64:
 
-Replay Gain: off
-64-bit Processing: on
-Automatic Gain Protection: off
-Service: off
-Audio Hardware:
+**Replay Gain:** off<br />
+**64-bit Processing:** **on**<br />
+**Automatic Gain Protection:** off<br />
+**Service:** off<br />
+**Audio Hardware:**<br />
 * DSP Effect (Device): off
 * Mono: off
 * Dither: off
@@ -140,7 +140,7 @@ Audio Hardware:
 ## Recommended settings for USB Audio Player Pro
 Starting from version 4.1, UAPP on DX200 can play PCM up to 32/192KHz bit perfect via its HiRes Direct Driver, without a need of [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended for the version 4.1.8:
 
-Internal audio driver: HiRes Direct Driver
+**Internal audio driver:** HiRes Direct Driver
 
 **HiRes audio:**
 * HiRes driver flags: Direct PCM
