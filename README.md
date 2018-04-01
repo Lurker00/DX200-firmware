@@ -6,6 +6,7 @@
 1. [Use of USB Reader in Mango to access microSD card](#use-of-usb-reader-in-mango-to-access-microsd-card)
 1. [Flash DX200 firmware using FactoryTool (Windows)](#flash-dx200-firmware-using-factorytool-windows)
 1. [Flash DX200 firmware using rkflashtool (Mac/Linux)](#flash-dx200-firmware-using-rkflashtool-maclinux)
+1. [Recommended settings for Neutron Music Player](#recommended-settings-for-neutron-music-player)
 1. [Recommended settings for USB Audio Player Pro](#recommended-settings-for-usb-audio-player-pro)
 
 To download the latest releases, please go to the [Releases section](https://github.com/Lurker00/DX200-firmware/releases).
@@ -113,8 +114,31 @@ to reboot the device, or do it manually.
 
 The Mac specific steps above were derived from a [forum post by Likeimthere](https://www.head-fi.org/threads/791531/page-501#post-13649223).
 
+## Recommended settings for Neutron Music Player
+Neutron Music Player automatically detects DX200 and is able to play PCM up to 32/768KHz and DSD up to DSD512 bit perfect, without a need to use [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended the version 2.01.0-AMD64:
+
+Replay Gain: off
+64-bit Processing: on
+Automatic Gain Protection: off
+Service: off
+Audio Hardware:
+* DSP Effect (Device): off
+* Mono: off
+* Dither: off
+* Phase Inversion: off
+* Subsonic Filter: off
+* Ultrasonic Filter: off
+* Reverse Stereo: off
+* Hardware Gain: **on**
+* Audio Focus: **on**
+* CPU Wak Lock: **on**
+* Direct USB Driver: off
+* DSD, DSD over PCM (DoP): **on**; tap on this item, and Native DSD: **on**
+* Follow Source Frequency: **on**
+
+
 ## Recommended settings for USB Audio Player Pro
-Starting from version 4.1, UAPP on DX200 can play PCM up to 32/192KHz bit perfect via its HiRes Direct Driver, without a need of [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings were tested with the version 4.1.8:
+Starting from version 4.1, UAPP on DX200 can play PCM up to 32/192KHz bit perfect via its HiRes Direct Driver, without a need of [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended for the version 4.1.8:
 
 Internal audio driver: HiRes Direct Driver
 
