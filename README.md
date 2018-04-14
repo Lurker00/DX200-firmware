@@ -20,6 +20,8 @@ To flash the firmware, you need
 Flashing this firmware will not clean the user data. To return to the official firmware, just flash it per its instruction. You may only need to do a factory reset to get rid of icons of software, pre-installed in my firmware builds, but sometimes it's enough to delete them a usual way.
 
 ## Changes made
+* Battery charging process has been optimized to reduce a chance for overheating, and to fully utilize battery capacity.
+* When the screen is turned off, CPU and RAM are running at reduced speed, to reduce power consumption. 2.8.198L1 adds more than a hour of typical continuous playback, compared to the official firmware.
 ### Android mode
 * Added **Google Play Market**. It is not the latest version available, but it corresponds to the pre-installed Google Play Services. Can be disabled and enabled back via [***System settings***](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md#system-settings) of USB Audio app, along with Google Services (2.7.188L0+).
 * **USB Mass Storage** (2.2.110-L1+) to direct access of your microSD card when you connect DX200 to a computer. It replaces MIDI choice in the pull-down menu of USB connections. When selected, SD card is unmounted internally, and is not visible if you return back to MTP. It is mounted back right after disconnect from the computer.
