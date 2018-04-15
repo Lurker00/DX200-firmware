@@ -140,7 +140,7 @@ Neutron Music Player automatically detects DX200 and is able to play PCM up to 3
 
 
 ## Recommended settings for USB Audio Player Pro
-Starting from version 4.1, UAPP on DX200 can play PCM up to 32/192KHz bit perfect via its HiRes Direct Driver, without a need of [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended for the version 4.1.8:
+Starting from version 4.1, UAPP on DX200 can play PCM up to 32/192KHz bit perfect via its HiRes Direct Driver, without a need of [USB Audio application](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md). The following settings are recommended for the version 4.2.5:
 
 **Internal audio driver:** HiRes Direct Driver
 
