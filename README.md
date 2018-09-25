@@ -168,6 +168,6 @@ To use along with [USB Audio application](https://github.com/Lurker00/DX200-USB-
 * Replay gain: No replay gain
 * Replay gain compensation: 0 dB
 
-**USB audio tweakes:**
+**USB audio tweaks:**
 * Use USB DAC: checked
 * Free USB bandwidth after playback: checked
