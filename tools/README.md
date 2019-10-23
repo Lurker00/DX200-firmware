@@ -18,7 +18,7 @@ For a test, download a track, unzip. Connect your device' S/PDIF output to S/PDI
 
 With iBasso DX200 in full Android mode, MangoPlayer passes both tests. Other players (tried USB Audio Player PRO, HibyMusic, Neutron Music Player) pass only 16/44.1 test, which means that Android sound path is locked to 44.1kHz sampling rate. With [USB Audio](https://github.com/Lurker00/DX200-USB-Audio-Release/blob/master/README.md) software, all three players pass both tests.
 
-**Edit:** The latest release of Neutron Music, with support of DX200 extension in its Generic Driver, passes all the tests!
+**Edit:** The latest releases of Neutron Music and UAPP pass all the tests!
 
 ## DSD64 in DoP
 
